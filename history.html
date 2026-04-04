@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>沿革 | Thế Anh JP</title>
+    <meta
+      name="description"
+      content="沿革 Thế Anh JP qua các giai đoạn hình thành, mở rộng hệ thống và phát triển thương hiệu thời trang."
+    />
+
+    <link rel="icon" type="image/jpeg" href="assets/logo/logotheanh.jpg" />
+    <link rel="apple-touch-icon" href="assets/logo/logotheanh.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Old+Mincho:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans JP', 'sans-serif'],
+              serifjp: ['Zen Old Mincho', 'serif']
+            }
+          }
+        }
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="ja-i18n.js" defer></script>
+  </head>
+  <body class="history-page text-slate-800 antialiased">
+    <header id="siteHeader" class="site-header fixed inset-x-0 top-0 z-50">
+      <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="index.html#home" class="group flex min-w-0 items-center gap-3">
+          <div class="h-11 w-[4.2rem] overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm sm:h-12 sm:w-[4.6rem]">
+            <img src="assets/logo/logotheanh.jpg" alt="Logo Thế Anh JP" class="h-full w-full object-cover" />
+          </div>
+          <div class="min-w-0 leading-tight">
+            <p class="truncate text-base font-extrabold text-slate-900 sm:text-lg">Thế Anh JP</p>
+            <p class="mt-1 truncate text-[0.58rem] font-semibold tracking-[0.12em] text-slate-500 sm:text-[0.66rem]">日本の高級メンズファッション</p>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+          <a class="nav-link" href="index.html#home">ホーム</a>
+          <a class="nav-link" href="company.html">会社概要</a>
+          <a class="nav-link" href="business.html">企業情報</a>
+          <a class="nav-link" href="activities.html">事業紹介</a>
+          <a class="nav-link" href="index.html#news">お知らせ</a>
+          <a class="nav-link" href="index.html#access">お問い合わせ</a>
+        </nav>
+
+        <button
+          id="menuBtn"
+          class="mobile-menu-btn inline-flex h-11 w-11 items-center justify-center rounded-md border border-slate-300 text-slate-900 md:hidden"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="sr-only">メニューを開く</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="menuOverlay" class="menu-overlay fixed inset-0 z-40 bg-slate-900/45 opacity-0 pointer-events-none"></div>
+    <nav
+      id="mobileMenu"
+      class="mobile-menu fixed right-0 top-0 z-50 h-full w-[82%] max-w-sm translate-x-full bg-white px-6 pb-10 pt-24 shadow-2xl md:hidden"
+      aria-hidden="true"
+    >
+      <div class="mobile-menu__grid text-base font-medium">
+        <a class="mobile-link block rounded-md px-3 py-4" href="index.html#home">ホーム</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="company.html">会社概要</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="business.html">企業情報</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="activities.html">事業紹介</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="index.html#news">お知らせ</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="index.html#access">お問い合わせ</a>
+      </div>
+    </nav>
+
+    <main class="section-space">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <nav class="reveal mb-9 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500" aria-label="Breadcrumb">
+          <a href="index.html#home" class="hover:text-slate-800">ホーム</a>
+          <span class="mx-2">&gt;</span>
+          <a href="company.html" class="hover:text-slate-800">会社概要</a>
+          <span class="mx-2">&gt;</span>
+          <span class="text-slate-700">沿革</span>
+        </nav>
+
+        <div class="profile-tabs reveal mb-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <a href="company.html" class="profile-tab">
+            <span>01</span>
+            <strong>会社概要</strong>
+          </a>
+          <a href="history.html" class="profile-tab is-active">
+            <span>02</span>
+            <strong>沿革</strong>
+          </a>
+          <a href="business.html" class="profile-tab">
+            <span>03</span>
+            <strong>企業情報</strong>
+          </a>
+          <a href="activities.html" class="profile-tab">
+            <span>04</span>
+            <strong>事業紹介</strong>
+          </a>
+        </div>
+
+        <section class="history-panel reveal">
+          <h1>沿革</h1>
+
+          <div class="history-table-wrap">
+            <table class="history-table">
+              <tbody>
+                <tr>
+                  <th>2018</th>
+                  <td>Thành lập thương hiệu Thế Anh JP tại Hà Nội, khởi đầu với mô hình thiết kế và may đo thời trang ứng dụng.</td>
+                </tr>
+                <tr>
+                  <th>2019</th>
+                  <td>Ra mắt xưởng mẫu đầu tiên, chuẩn hóa quy trình phát triển thiết kế theo mùa Xuân - Hè - Thu - Đông.</td>
+                </tr>
+                <tr>
+                  <th>2020</th>
+                  <td>Mở rộng sang kênh bán lẻ trực tuyến và hợp tác với các đối tác sản xuất vệ tinh tại miền Bắc.</td>
+                </tr>
+                <tr>
+                  <th>2021</th>
+                  <td>Thiết lập hệ thống kiểm soát chất lượng nội bộ, tăng năng lực sản xuất cho dòng thời trang công sở cao cấp.</td>
+                </tr>
+                <tr>
+                  <th>2022</th>
+                  <td>Khai trương showroom đầu tiên tại TP.HCM, nâng cấp trải nghiệm khách hàng đa kênh.</td>
+                </tr>
+                <tr>
+                  <th>2023</th>
+                  <td>Thành lập văn phòng điều phối tại Tokyo, phát triển mạng lưới đối tác phân phối tại thị trường Nhật Bản.</td>
+                </tr>
+                <tr>
+                  <th>2024</th>
+                  <td>Đưa vật liệu thân thiện môi trường vào 60% danh mục sản phẩm và tối ưu đóng gói xanh.</td>
+                </tr>
+                <tr>
+                  <th>2025</th>
+                  <td>Hoàn thiện hệ thống quản trị dữ liệu bán hàng và cá nhân hóa trải nghiệm mua sắm tại cửa hàng.</td>
+                </tr>
+                <tr>
+                  <th>2026</th>
+                  <td>Mở rộng chuỗi sản phẩm chủ lực, tăng tốc chiến lược thương hiệu thời trang Việt - Nhật trên nền tảng số.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+          <section class="site-footer__brand lg:col-span-5">
+            <p class="site-footer__eyebrow">THE ANH JP</p>
+            <h2>Thế Anh JP</h2>
+            <p>
+              高品質ファッション製品の輸入・販売を行い、適正価格と透明性の高いサービスを提供します。
+            </p>
+          </section>
+
+          <section class="site-footer__contact lg:col-span-3">
+            <h3>お問い合わせ</h3>
+            <ul>
+              <li><span>Hotline</span><a href="tel:08042179991">080-4217-9991</a></li>
+              <li><span>Email</span><a href="mailto:thaianhjp2023@gmail.com">thaianhjp2023@gmail.com</a></li>
+              <li><span>対応エリア</span><strong>Tokyo | Hanoi | Ho Chi Minh City</strong></li>
+            </ul>
+          </section>
+
+          <section class="site-footer__social lg:col-span-2">
+            <h3>SNS</h3>
+            <div class="site-footer__social-list">
+              <a href="https://www.facebook.com/thaianhshop2022" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Facebook Thế Anh JP">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.03 6.55H11.2L10.94 8.8H9.03V15H6.11V8.8H4.5V6.55H6.11V4.88C6.11 2.87 7.32 1.5 9.81 1.5C10.55 1.5 11.19 1.56 11.37 1.58V3.68H9.66C8.45 3.68 8.21 4.25 8.21 5.09V6.55H9.03Z" fill="currentColor"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.tiktok.com/@thaianhshop" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="TikTok Thế Anh JP">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4v8.7a3.7 3.7 0 11-2.9-3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 4c1 .95 2.35 1.53 3.83 1.53" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="site-footer__legal lg:col-span-2">
+            <h3>法務情報</h3>
+            <p>MST: 0109 888 777</p>
+            <p>Copyright © 2026 The Anh JP Co., Ltd.</p>
+            <p>All rights reserved.</p>
+          </section>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-xs sm:px-6 sm:text-sm lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <p>本物の品質、確かな価値、透明なサービス。</p>
+          <p>カスタマーサポート: 09:00 - 21:00（毎日）</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thế Anh JP | 日越スタイルの上質メンズファッション</title>
+    <meta
+      name="description"
+      content="Thế Anh JP - 日本スタイルの上質なファッションを提案する企業サイト。"
+    />
+
+    <link rel="icon" type="image/jpeg" href="assets/logo/logotheanh.jpg" />
+    <link rel="apple-touch-icon" href="assets/logo/logotheanh.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Old+Mincho:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans JP', 'sans-serif'],
+              serifjp: ['Zen Old Mincho', 'serif']
+            }
+          }
+        }
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="ja-i18n.js" defer></script>
+  </head>
+  <body class="home-page text-slate-800 antialiased">
+    <header id="siteHeader" class="site-header fixed inset-x-0 top-0 z-50">
+      <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="#home" class="group flex min-w-0 items-center gap-3">
+          <div class="h-11 w-[4.2rem] overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm sm:h-12 sm:w-[4.6rem]">
+            <img src="assets/logo/logotheanh.jpg" alt="Logo Thế Anh JP" class="h-full w-full object-cover" />
+          </div>
+          <div class="min-w-0 leading-tight">
+            <p class="truncate text-base font-extrabold text-slate-900 sm:text-lg">Thế Anh JP</p>
+            <p class="mt-1 truncate text-[0.58rem] font-semibold tracking-[0.12em] text-slate-500 sm:text-[0.66rem]">日本の高級メンズファッション</p>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+          <a class="nav-link" href="#home">ホーム</a>
+          <a class="nav-link" href="company.html">会社概要</a>
+          <a class="nav-link" href="business.html">企業情報</a>
+          <a class="nav-link" href="activities.html">事業紹介</a>
+          <a class="nav-link" href="recruit.html">採用情報</a>
+          <a class="nav-link" href="#access">お問い合わせ</a>
+        </nav>
+
+        <button
+          id="menuBtn"
+          class="mobile-menu-btn inline-flex h-11 w-11 items-center justify-center rounded-md border border-slate-300 text-slate-900 md:hidden"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="sr-only">メニューを開く</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="menuOverlay" class="menu-overlay fixed inset-0 z-40 bg-slate-900/45 opacity-0 pointer-events-none"></div>
+    <nav
+      id="mobileMenu"
+      class="mobile-menu fixed right-0 top-0 z-50 h-full w-[82%] max-w-sm translate-x-full bg-white px-6 pb-10 pt-24 shadow-2xl md:hidden"
+      aria-hidden="true"
+    >
+      <div class="mobile-menu__grid text-base font-medium">
+        <a class="mobile-link block rounded-md px-3 py-4" href="#home">ホーム</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="company.html">会社概要</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="business.html">企業情報</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="activities.html">事業紹介</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="recruit.html">採用情報</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="#access">お問い合わせ</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="home-hero relative overflow-hidden">
+        <div id="heroMedia" class="hero-parallax absolute inset-0">
+          <img
+            src="assets/logo/anhbia.jpg"
+            alt="Thời trang cao cấp Thế Anh JP"
+            class="hero-banner-image h-full w-full object-cover"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/65 via-black/35 to-black/10"></div>
+        <div class="relative mx-auto min-h-[220px] w-full max-w-7xl px-4 pt-20 sm:min-h-[320px] sm:px-6 sm:pt-24 lg:px-8"></div>
+      </section>
+
+      <section id="intro" class="section-space home-intro">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="home-intro__panel reveal">
+            <p class="home-intro__eyebrow">Business Introduction</p>
+            <h2>事業紹介</h2>
+            <p>
+              Thế Anh JPは高品質なファッション商品の輸入・販売に特化しています。
+              信頼できる仕入れ、丁寧な検品、効率的な運営の3つを軸に、
+              適正価格で安心して選べる買い物体験を提供します。
+            </p>
+            <a href="activities.html" class="home-intro__cta">事業紹介ページを見る</a>
+          </div>
+
+          <div class="intro-marquee reveal mt-8" aria-label="店舗イメージギャラリー">
+            <div class="intro-marquee__track">
+              <div class="intro-marquee__group">
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/626769241_881393274634084_376386484469936504_n.jpg" alt="Showcase 1" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/626812699_879636618143083_673798392305712956_n.jpg" alt="Showcase 2" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/629723182_884657064307705_3228169721349389147_n.jpg" alt="Showcase 3" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/650622900_907486625358082_2335058643050465722_n.jpg" alt="Showcase 4" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/653760006_913077991465612_1487526715544380109_n.jpg" alt="Showcase 5" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/654421894_913036864803058_1935184434989615819_n.jpg" alt="Showcase 6" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/654521510_912143578225720_2483297846351606769_n.jpg" alt="Showcase 7" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/654540986_913077994798945_8809003543522802495_n.jpg" alt="Showcase 8" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/655004946_913036861469725_5163229285771254638_n.jpg" alt="Showcase 9" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/655959633_915605371212874_7149664888229643320_n.jpg" alt="Showcase 10" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/655977436_915605511212860_5622725362532545262_n.jpg" alt="Showcase 11" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/655997328_916394331133978_7323379539073041840_n.jpg" alt="Showcase 12" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/656308195_918967400876671_102469611138071291_n.jpg" alt="Showcase 13" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/656447378_914768724629872_5447341933828716882_n.jpg" alt="Showcase 14" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/657152661_915605411212870_3024627082044962800_n.jpg" alt="Showcase 15" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/657255616_916394401133971_2565283607610467022_n.jpg" alt="Showcase 16" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/658914557_921281027311975_7989984645679666445_n.jpg" alt="Showcase 17" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/659100008_922858247154253_7218128761173032766_n.jpg" alt="Showcase 18" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/661497184_924480730325338_7748527091668955941_n.jpg" alt="Showcase 19" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/661959407_922876030485808_502876833724533575_n.jpg" alt="Showcase 20" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/662625564_922875993819145_4149620645460457106_n.jpg" alt="Showcase 21" /></article>
+                <article class="image-hover intro-marquee__item"><img src="assets/images/gallery/showcase/663252676_924480496992028_2489551339723532222_n.jpg" alt="Showcase 22" /></article>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="recruit-preview" class="section-space">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 reveal text-center">
+            <p class="text-xs uppercase tracking-[0.28em] text-slate-500">Latest Notice</p>
+            <h2 class="mt-3 text-3xl font-bold sm:text-4xl">最新のお知らせ</h2>
+          </div>
+
+          <div class="reveal mx-auto w-full max-w-4xl rounded-2xl bg-white p-4 shadow-sm sm:p-6">
+            <ul class="divide-y divide-slate-200">
+              <li class="grid gap-2 py-4 sm:grid-cols-[110px_120px_1fr] sm:items-center">
+                <time class="text-sm text-slate-500">2026.04.01</time>
+                <span class="inline-flex w-fit rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700">採用</span>
+                <p class="text-sm text-slate-800">日本市場向けファッションマーチャンダイザーを募集します。</p>
+              </li>
+              <li class="grid gap-2 py-4 sm:grid-cols-[110px_120px_1fr] sm:items-center">
+                <time class="text-sm text-slate-500">2026.03.15</time>
+                <span class="inline-flex w-fit rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700">人事</span>
+                <p class="text-sm text-slate-800">ハノイデザインセンターでサンプル管理担当を募集します。</p>
+              </li>
+              <li class="grid gap-2 py-4 sm:grid-cols-[110px_120px_1fr] sm:items-center">
+                <time class="text-sm text-slate-500">2026.02.28</time>
+                <span class="inline-flex w-fit rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">インターン</span>
+                <p class="text-sm text-slate-800">2026年夏期のデザインインターン応募を受け付けています。</p>
+              </li>
+              <li class="grid gap-2 py-4 sm:grid-cols-[110px_120px_1fr] sm:items-center">
+                <time class="text-sm text-slate-500">2026.01.10</time>
+                <span class="inline-flex w-fit rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-700">お知らせ</span>
+                <p class="text-sm text-slate-800">生産運営部門向けの新しい社内研修方針を導入しました。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="access" class="section-space section-accent">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 reveal">
+            <p class="text-xs uppercase tracking-[0.28em] text-slate-500">Access & Contact</p>
+            <h2 class="mt-3 text-3xl font-bold sm:text-4xl">店舗情報・お問い合わせ</h2>
+          </div>
+
+          <div class="access-grid reveal">
+            <article class="access-branch access-branch--gifu">
+              <div class="access-branch__body">
+                <div class="access-branch__top">
+                  <span class="access-badge">拠点 01</span>
+                  <h3>GIFU</h3>
+                </div>
+                <p class="access-branch__address">
+                  〒500-8455 岐阜県岐阜市加納栄町通3丁目12 サンデービル 1F
+                </p>
+                <p class="access-branch__phone">TEL: 050-6878-5588</p>
+              </div>
+              <div class="access-branch__map">
+                <iframe
+                  title="岐阜店マップ"
+                  src="https://maps.google.com/maps?q=500-8455%20%E5%B2%90%E9%98%9C%E7%9C%8C%E5%B2%90%E9%98%9C%E5%B8%82%E5%8A%A0%E7%B4%8D%E6%A0%84%E7%94%BA%E9%80%9A3%E4%B8%81%E7%9B%AE12%20%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC%E3%83%93%E3%83%AB%201F&z=17&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="access-branch access-branch--sakae">
+              <div class="access-branch__body">
+                <div class="access-branch__top">
+                  <span class="access-badge">拠点 02</span>
+                  <h3>SAKAE</h3>
+                </div>
+                <p class="access-branch__address">
+                  〒460-0008 名古屋市中区栄3丁目3番30号 (茶ばしらビル 3階東号室)
+                </p>
+                <p class="access-branch__phone">TEL: 080-4217-9991</p>
+              </div>
+              <div class="access-branch__map">
+                <iframe
+                  title="栄店マップ"
+                  src="https://maps.google.com/maps?q=460-0008%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E5%8C%BA%E6%A0%843%E4%B8%81%E7%9B%AE3%E7%95%AA30%E5%8F%B7%20%E8%8C%B6%E3%81%B0%E3%81%97%E3%82%89%E3%83%93%E3%83%AB%203%E9%9A%8E%E6%9D%B1%E5%8F%B7%E5%AE%A4&z=17&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+          <section class="site-footer__brand lg:col-span-5">
+            <p class="site-footer__eyebrow">THE ANH JP</p>
+            <h2>Thế Anh JP</h2>
+            <p>
+              高品質ファッション製品の輸入・販売を行い、適正価格と透明性の高いサービスを提供します。
+            </p>
+          </section>
+
+          <section class="site-footer__contact lg:col-span-3">
+            <h3>お問い合わせ</h3>
+            <ul>
+              <li><span>Hotline</span><a href="tel:08042179991">080-4217-9991</a></li>
+              <li><span>Email</span><a href="mailto:thaianhjp2023@gmail.com">thaianhjp2023@gmail.com</a></li>
+              <li><span>対応エリア</span><strong>Tokyo | Hanoi | Ho Chi Minh City</strong></li>
+            </ul>
+          </section>
+
+          <section class="site-footer__social lg:col-span-2">
+            <h3>SNS</h3>
+            <div class="site-footer__social-list">
+              <a href="https://www.facebook.com/thaianhshop2022" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Facebook Thế Anh JP">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.03 6.55H11.2L10.94 8.8H9.03V15H6.11V8.8H4.5V6.55H6.11V4.88C6.11 2.87 7.32 1.5 9.81 1.5C10.55 1.5 11.19 1.56 11.37 1.58V3.68H9.66C8.45 3.68 8.21 4.25 8.21 5.09V6.55H9.03Z" fill="currentColor"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.tiktok.com/@thaianhshop" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="TikTok Thế Anh JP">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4v8.7a3.7 3.7 0 11-2.9-3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 4c1 .95 2.35 1.53 3.83 1.53" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="site-footer__legal lg:col-span-2">
+            <h3>法務情報</h3>
+            <p>MST: 0109 888 777</p>
+            <p>Copyright © 2026 The Anh JP Co., Ltd.</p>
+            <p>All rights reserved.</p>
+          </section>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-xs sm:px-6 sm:text-sm lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <p>本物の品質、確かな価値、透明なサービス。</p>
+          <p>カスタマーサポート: 09:00 - 21:00（毎日）</p>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="floating-actions" aria-label="クイック連絡">
+      <a href="tel:08042179991" class="floating-btn floating-btn-call" aria-label="電話">
+        <span class="floating-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92V20a2 2 0 01-2.18 2A19.8 19.8 0 013 6.18 2 2 0 015 4h3.09a2 2 0 012 1.72c.12.9.32 1.77.6 2.61a2 2 0 01-.45 2.11L9.1 11.57a16 16 0 006.33 6.33l1.13-1.14a2 2 0 012.11-.45c.84.28 1.71.48 2.61.6A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="floating-btn__label">今すぐ電話</span>
+      </a>
+
+      <a href="mailto:thaianhjp2023@gmail.com" class="floating-btn floating-btn-mail" aria-label="Gmailを送る">
+        <span class="floating-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </span>
+        <span class="floating-btn__label">Gmail</span>
+      </a>
+
+      <a href="https://www.facebook.com/thaianhshop2022" target="_blank" rel="noopener noreferrer" class="floating-btn floating-btn-facebook" aria-label="Facebookを開く">
+        <span class="floating-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.03 6.55H11.2L10.94 8.8H9.03V15H6.11V8.8H4.5V6.55H6.11V4.88C6.11 2.87 7.32 1.5 9.81 1.5C10.55 1.5 11.19 1.56 11.37 1.58V3.68H9.66C8.45 3.68 8.21 4.25 8.21 5.09V6.55H9.03Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="floating-btn__label">Facebook</span>
+      </a>
+
+      <a href="https://www.tiktok.com/@thaianhshop" target="_blank" rel="noopener noreferrer" class="floating-btn floating-btn-tiktok" aria-label="TikTokを開く">
+        <span class="floating-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 4v8.7a3.7 3.7 0 11-2.9-3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 4c1 .95 2.35 1.53 3.83 1.53" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="floating-btn__label">TikTok</span>
+      </a>
+    </aside>
+  </body>
+</html>
