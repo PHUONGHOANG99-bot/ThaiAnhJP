@@ -11,6 +11,7 @@
 
     <link rel="icon" type="image/jpeg" href="assets/logo/logotheanh.jpg" />
     <link rel="apple-touch-icon" href="assets/logo/logotheanh.jpg" />
+    <link rel="preload" as="image" href="assets/logo/anhbia.jpg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,8 +42,8 @@
     <header id="siteHeader" class="site-header fixed inset-x-0 top-0 z-50">
       <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="index.html#home" class="group flex min-w-0 items-center gap-3">
-          <div class="h-11 w-[4.2rem] overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm sm:h-12 sm:w-[4.6rem]">
-            <img src="assets/logo/logotheanh.jpg" alt="Logo THAI ANH JP" class="h-full w-full object-cover" />
+          <div class="h-11 w-[4.2rem] overflow-hidden sm:h-12 sm:w-[4.6rem]">
+            <img src="assets/logo/logotheanh.jpg" alt="Logo THAI ANH JP" class="h-full w-full object-cover" loading="eager" fetchpriority="high" decoding="async">
           </div>
           <div class="min-w-0 leading-tight">
             <p class="truncate text-base font-extrabold text-slate-900 sm:text-lg">THAI ANH JP</p>
@@ -97,7 +98,7 @@
             src="assets/logo/anhbia.jpg"
             alt="THAI ANH JP company profile"
             class="hero-banner-image h-full w-full object-cover"
-          />
+          loading="eager" fetchpriority="high" decoding="async">
         </div>
         <div class="profile-hero__overlay"></div>
         <div class="profile-hero__label reveal">
@@ -200,7 +201,7 @@
                 <img
                   src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80"
                   alt="拠点1 GIFU"
-                />
+                loading="lazy" decoding="async">
                 <div>
                   <h3>拠点1 - GIFU</h3>
                   <p>〒500-8455 岐阜県岐阜市加納栄町通3丁目12 サンデービル 1F | TEL: 050-6878-5588</p>
@@ -220,7 +221,7 @@
                 <img
                   src="https://images.unsplash.com/photo-1481437156560-3205f6a55735?auto=format&fit=crop&w=1200&q=80"
                   alt="拠点2 SAKAE"
-                />
+                loading="lazy" decoding="async">
                 <div>
                   <h3>拠点2 - SAKAE</h3>
                   <p>〒460-0008 名古屋市中区栄3丁目3番30号 (茶ばしらビル 3階東号室) | TEL: 080-4217-9991</p>

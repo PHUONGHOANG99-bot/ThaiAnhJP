@@ -11,6 +11,7 @@
 
     <link rel="icon" type="image/jpeg" href="assets/logo/logotheanh.jpg" />
     <link rel="apple-touch-icon" href="assets/logo/logotheanh.jpg" />
+    <link rel="preload" as="image" href="assets/logo/anhbia.jpg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,8 +42,8 @@
     <header id="siteHeader" class="site-header fixed inset-x-0 top-0 z-50">
       <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="index.html#home" class="group flex min-w-0 items-center gap-3">
-          <div class="h-11 w-[4.2rem] overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm sm:h-12 sm:w-[4.6rem]">
-            <img src="assets/logo/logotheanh.jpg" alt="Logo THAI ANH JP" class="h-full w-full object-cover" />
+          <div class="h-11 w-[4.2rem] overflow-hidden sm:h-12 sm:w-[4.6rem]">
+            <img src="assets/logo/logotheanh.jpg" alt="Logo THAI ANH JP" class="h-full w-full object-cover" loading="eager" fetchpriority="high" decoding="async">
           </div>
           <div class="min-w-0 leading-tight">
             <p class="truncate text-base font-extrabold text-slate-900 sm:text-lg">THAI ANH JP</p>
@@ -92,7 +93,7 @@
 
     <main>
       <section class="business-hero">
-        <img src="assets/logo/anhbia.jpg" alt="企業情報バナー" class="hero-banner-image" />
+        <img src="assets/logo/anhbia.jpg" alt="企業情報バナー" class="hero-banner-image" loading="eager" fetchpriority="high" decoding="async">
         <div class="business-hero__overlay"></div>
         <div class="business-hero__label reveal">
           <strong>BUSINESS</strong>
@@ -119,7 +120,7 @@
                   実際の購買行動に合ったラインナップを提供します。
                 </p>
               </div>
-              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" alt="店舗販売モデル" />
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" alt="店舗販売モデル" loading="lazy" decoding="async">
             </article>
           </section>
 
@@ -132,20 +133,20 @@
                   素材情報を分かりやすく提示し、短時間で最適な商品を安心して選べる体験を目指しています。
                 </p>
               </div>
-              <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80" alt="店頭サービス" />
+              <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80" alt="店頭サービス" loading="lazy" decoding="async">
             </article>
 
             <div class="business-mini-grid">
               <article>
-                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=900&q=80" alt="コレクション展示" />
+                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=900&q=80" alt="コレクション展示" loading="lazy" decoding="async">
                 <p>コレクション別ディスプレイ</p>
               </article>
               <article>
-                <img src="https://images.unsplash.com/photo-1604176424472-9d7f8ca11190?auto=format&fit=crop&w=900&q=80" alt="フィッティングスペース" />
+                <img src="https://images.unsplash.com/photo-1604176424472-9d7f8ca11190?auto=format&fit=crop&w=900&q=80" alt="フィッティングスペース" loading="lazy" decoding="async">
                 <p>プライベートな試着空間</p>
               </article>
               <article>
-                <img src="https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=900&q=80" alt="決済とアフターサポート" />
+                <img src="https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=900&q=80" alt="決済とアフターサポート" loading="lazy" decoding="async">
                 <p>決済・アフターサポート導線</p>
               </article>
             </div>
@@ -161,7 +162,7 @@
                   この運営基盤をもとに、次の拠点展開を進めています。
                 </p>
               </div>
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="マルチチャネル運営" />
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="マルチチャネル運営" loading="lazy" decoding="async">
             </article>
           </section>
         </div>
