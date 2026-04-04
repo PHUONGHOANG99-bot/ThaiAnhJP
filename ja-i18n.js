@@ -11,8 +11,8 @@
     });
   };
 
-  const setByHref = (href, text) => {
-    document.querySelectorAll(`a[href="${href}"]`).forEach((el) => {
+  const setMenuByHref = (href, text) => {
+    document.querySelectorAll(`.nav-link[href="${href}"], .mobile-link[href="${href}"]`).forEach((el) => {
       el.textContent = text;
     });
   };
@@ -20,16 +20,16 @@
   const setCommon = () => {
     document.documentElement.lang = 'ja';
 
-    setByHref('#home', 'ホーム');
-    setByHref('index.html#home', 'ホーム');
-    setByHref('company.html', '会社概要');
-    setByHref('business.html', '企業情報');
-    setByHref('activities.html', '事業紹介');
-    setByHref('recruit.html', '採用情報');
-    setByHref('#access', 'お問い合わせ');
-    setByHref('index.html#access', 'お問い合わせ');
-    setByHref('#news', 'お知らせ');
-    setByHref('index.html#news', 'お知らせ');
+    setMenuByHref('#home', 'ホーム');
+    setMenuByHref('index.html#home', 'ホーム');
+    setMenuByHref('company.html', '会社概要');
+    setMenuByHref('business.html', '企業情報');
+    setMenuByHref('activities.html', '事業紹介');
+    setMenuByHref('recruit.html', '採用情報');
+    setMenuByHref('#access', 'お問い合わせ');
+    setMenuByHref('index.html#access', 'お問い合わせ');
+    setMenuByHref('#news', 'お知らせ');
+    setMenuByHref('index.html#news', 'お知らせ');
 
     document.querySelectorAll('.leading-tight p:nth-child(2)').forEach((el) => {
       el.textContent = '日本の高級メンズファッション';
@@ -60,12 +60,12 @@
   };
 
   const setIndex = () => {
-    document.title = 'Thế Anh JP | 日越スタイルの上質メンズファッション';
+    document.title = 'THAI ANH JP | 日越スタイルの上質メンズファッション';
     const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute('content', 'Thế Anh JP - 日本スタイルの上質なファッションを提案する企業サイト。');
+    if (desc) desc.setAttribute('content', 'THAI ANH JP - 日本スタイルの上質なファッションを提案する企業サイト。');
 
     set('#intro .home-intro__panel h2', '事業紹介');
-    set('#intro .home-intro__panel p', 'Thế Anh JPは高品質なファッション商品の輸入・販売に特化しています。信頼できる仕入れ、丁寧な検品、効率的な運営を軸に、適正価格で安心して選べる買い物体験を提供します。');
+    set('#intro .home-intro__panel p', 'THAI ANH JPは高品質なファッション商品の輸入・販売に特化しています。信頼できる仕入れ、丁寧な検品、効率的な運営を軸に、適正価格で安心して選べる買い物体験を提供します。');
     set('#intro .home-intro__cta', '事業紹介ページを見る');
 
     const marquee = document.querySelector('.intro-marquee');
@@ -81,7 +81,7 @@
   };
 
   const setCompany = () => {
-    document.title = '会社概要 | Thế Anh JP';
+    document.title = '会社概要 | THAI ANH JP';
     set('main nav[aria-label="Breadcrumb"] a', 'ホーム');
     set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '会社概要');
     setAll('.profile-tab strong', ['会社概要', '沿革', '店舗拠点', '企業情報']);
@@ -92,7 +92,7 @@
   };
 
   const setBusiness = () => {
-    document.title = '企業情報 | Thế Anh JP';
+    document.title = '企業情報 | THAI ANH JP';
     set('.business-hero__label span', '企業概要');
     set('main nav[aria-label="Breadcrumb"] a', 'ホーム');
     set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '企業情報');
@@ -101,31 +101,30 @@
   };
 
   const setActivities = () => {
-    document.title = '事業紹介 | Thế Anh JP';
+    document.title = '事業紹介 | THAI ANH JP';
     set('.activities-breadcrumb a', 'ホーム');
     set('.activities-breadcrumb span:last-child', '事業紹介');
     set('.activities-hero__top h1', '事業紹介');
-    set('.activities-hero__top p', 'Thế Anh JPは、高品質なファッション商品の仕入れ・検品・販売に特化しています。信頼性と実用性を重視し、適正価格で安定した価値を届けます。');
+    set('.activities-hero__top p', 'THAI ANH JPは、高品質なファッション商品の仕入れ・検品・販売に特化しています。信頼性と実用性を重視し、適正価格で安定した価値を届けます。');
     setAll('.activities-intro__stats strong', ['100%', '2拠点', '価格透明']);
     setAll('.activities-intro__stats span', ['販売前に全品チェック', '直営で運営', 'オンライン/店舗で統一']);
     setAll('.activities-tab', ['仕入れ選定について', '品質検品について', '価格と販売チャネルについて']);
     setAll('.activities-section__head', ['仕入れ選定について', '品質検品について', '価格と販売チャネルについて', 'お客様の声']);
     setAll('#sourcing h2, #quality h2, #distribution h2, #customer-reviews h2', ['適切な仕入れで品質を安定化', 'お客様に届く前の徹底検品', '適正価格と透明な販売体制', 'お客様の声']);
     set('#customer-reviews p', '一つひとつのレビューをもとに、選品・シルエット・購入体験を継続的に改善しています。');
-    setAll('.reviews-nav', ['‹', '›']);
     const closeBtn = document.getElementById('reviewLightboxClose');
     if (closeBtn) closeBtn.setAttribute('aria-label', '画像を閉じる');
   };
 
   const setRecruit = () => {
-    document.title = '採用情報 | Thế Anh JP';
+    document.title = '採用情報 | THAI ANH JP';
     set('main nav[aria-label="Breadcrumb"] a', 'ホーム');
     set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '採用情報');
     setAll('.recruit-tab strong', ['募集職種', 'スタッフ情報', '成長ステップ', '福利厚生・カルチャー']);
   };
 
   const setHistory = () => {
-    document.title = '沿革 | Thế Anh JP';
+    document.title = '沿革 | THAI ANH JP';
   };
 
   const file = window.location.pathname.split('/').pop() || 'index.html';

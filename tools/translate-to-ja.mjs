@@ -4,12 +4,12 @@ const files = readdirSync('.').filter((f) => f.endsWith('.html'));
 
 const replacements = [
   ['<html lang="vi">', '<html lang="ja">'],
-  ['Thế Anh JP | Tinh hoa thời trang Việt Nhật', 'Thế Anh JP | 日越スタイルの上質メンズファッション'],
-  ['Hồ sơ công ty | Thế Anh JP', '会社概要 | Thế Anh JP'],
-  ['Thông tin doanh nghiệp | Thế Anh JP', '企業情報 | Thế Anh JP'],
-  ['Giới thiệu | Thế Anh JP', '事業紹介 | Thế Anh JP'],
-  ['Thông tin tuyển dụng | Thế Anh JP', '採用情報 | Thế Anh JP'],
-  ['Lịch sử công ty | Thế Anh JP', '沿革 | Thế Anh JP'],
+  ['THAI ANH JP | Tinh hoa thời trang Việt Nhật', 'THAI ANH JP | 日越スタイルの上質メンズファッション'],
+  ['Hồ sơ công ty | THAI ANH JP', '会社概要 | THAI ANH JP'],
+  ['Thông tin doanh nghiệp | THAI ANH JP', '企業情報 | THAI ANH JP'],
+  ['Giới thiệu | THAI ANH JP', '事業紹介 | THAI ANH JP'],
+  ['Thông tin tuyển dụng | THAI ANH JP', '採用情報 | THAI ANH JP'],
+  ['Lịch sử công ty | THAI ANH JP', '沿革 | THAI ANH JP'],
 
   ['Trang chủ', 'ホーム'],
   ['Hồ sơ công ty', '会社概要'],
@@ -22,11 +22,11 @@ const replacements = [
   ['Mở menu', 'メニューを開く'],
   ['Thời Trang Nam Cao Cấp Tại Nhật Bản', '日本の高級メンズファッション'],
 
-  ['Giới thiệu hoạt động kinh doanh của Thế Anh JP: tuyển chọn nguồn hàng chất lượng, kiểm định kỹ và phân phối với giá thành tốt.', 'Thế Anh JPの事業紹介：信頼できる仕入れ、丁寧な検品、適正価格での販売体制。'],
-  ['Khám phá quy trình tuyển chọn nguồn hàng, kiểm định chất lượng và phân phối minh bạch của Thế Anh JP.', 'Thế Anh JPの仕入れ選定、品質検品、透明性の高い販売プロセスをご紹介します。'],
-  ['Quy trình chọn hàng, kiểm định chất lượng và phân phối đa kênh tại Thế Anh JP.', 'Thế Anh JPの選品・品質確認・マルチチャネル販売の仕組み。'],
+  ['Giới thiệu hoạt động kinh doanh của THAI ANH JP: tuyển chọn nguồn hàng chất lượng, kiểm định kỹ và phân phối với giá thành tốt.', 'THAI ANH JPの事業紹介：信頼できる仕入れ、丁寧な検品、適正価格での販売体制。'],
+  ['Khám phá quy trình tuyển chọn nguồn hàng, kiểm định chất lượng và phân phối minh bạch của THAI ANH JP.', 'THAI ANH JPの仕入れ選定、品質検品、透明性の高い販売プロセスをご紹介します。'],
+  ['Quy trình chọn hàng, kiểm định chất lượng và phân phối đa kênh tại THAI ANH JP.', 'THAI ANH JPの選品・品質確認・マルチチャネル販売の仕組み。'],
 
-  ['Thế Anh JP - Website doanh nghiệp thời trang phong cách Nhật Bản, hiện đại và tối giản.', 'Thế Anh JP - 日本スタイルの上質なファッションを提案する企業サイト。'],
+  ['THAI ANH JP - Website doanh nghiệp thời trang phong cách Nhật Bản, hiện đại và tối giản.', 'THAI ANH JP - 日本スタイルの上質なファッションを提案する企業サイト。'],
   ['Business Introduction', 'Business Introduction'],
   ['Xem chi tiết trang giới thiệu', '事業紹介ページを見る'],
   ['Thông báo mới', '最新のお知らせ'],
@@ -66,7 +66,7 @@ const replacements = [
   ['Về tuyển chọn nguồn hàng', '仕入れ選定について'],
   ['Về kiểm định chất lượng', '品質検品について'],
   ['Về giá bán và phân phối', '価格と販売チャネルについて'],
-  ['Khách hàng nói gì về Thế Anh JP', 'お客様の声'],
+  ['Khách hàng nói gì về THAI ANH JP', 'お客様の声'],
   ['Mỗi phản hồi là dữ liệu thực tế giúp chúng tôi chọn hàng chuẩn hơn, giữ form đẹp hơn\n              và cải thiện trải nghiệm mua sắm mỗi ngày.', '一つひとつのレビューをもとに、選品・シルエット・購入体験を継続的に改善しています。'],
   ['Xem chi tiết', '詳細を見る'],
 
