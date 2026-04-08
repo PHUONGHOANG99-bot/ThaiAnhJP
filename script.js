@@ -338,9 +338,57 @@ document.addEventListener('keydown', (event) => {
 // Marquee showcase cho trang chu
 // ====================================
 const introMarqueeTrack = document.querySelector('.intro-marquee__track');
-const introMarqueeGroup = document.querySelector('.intro-marquee__group');
+const introMarqueeGroup = document.querySelector('[data-showcase-group]');
 
-if (introMarqueeTrack && introMarqueeGroup && introMarqueeTrack.children.length === 1) {
+const showcaseImages = [
+  'assets/images/gallery/showcase/2.jpeg',
+  'assets/images/gallery/showcase/3.jpeg',
+  'assets/images/gallery/showcase/4.jpeg',
+  'assets/images/gallery/showcase/5.jpeg',
+  'assets/images/gallery/showcase/6.jpeg',
+  'assets/images/gallery/showcase/7.jpeg',
+  'assets/images/gallery/showcase/8.jpeg',
+  'assets/images/gallery/showcase/9.jpeg',
+  'assets/images/gallery/showcase/10.jpeg',
+  'assets/images/gallery/showcase/11.jpeg',
+  'assets/images/gallery/showcase/626769241_881393274634084_376386484469936504_n.jpg',
+  'assets/images/gallery/showcase/629723182_884657064307705_3228169721349389147_n.jpg',
+  'assets/images/gallery/showcase/650622900_907486625358082_2335058643050465722_n.jpg',
+  'assets/images/gallery/showcase/653760006_913077991465612_1487526715544380109_n.jpg',
+  'assets/images/gallery/showcase/654421894_913036864803058_1935184434989615819_n.jpg',
+  'assets/images/gallery/showcase/654521510_912143578225720_2483297846351606769_n.jpg',
+  'assets/images/gallery/showcase/654540986_913077994798945_8809003543522802495_n.jpg',
+  'assets/images/gallery/showcase/655004946_913036861469725_5163229285771254638_n.jpg',
+  'assets/images/gallery/showcase/655959633_915605371212874_7149664888229643320_n.jpg',
+  'assets/images/gallery/showcase/655997328_916394331133978_7323379539073041840_n.jpg',
+  'assets/images/gallery/showcase/657255616_916394401133971_2565283607610467022_n.jpg',
+  'assets/images/gallery/showcase/659100008_922858247154253_7218128761173032766_n.jpg',
+  'assets/images/gallery/showcase/661497184_924480730325338_7748527091668955941_n.jpg',
+  'assets/images/gallery/showcase/661959407_922876030485808_502876833724533575_n.jpg',
+  'assets/images/gallery/showcase/662625564_922875993819145_4149620645460457106_n.jpg',
+  'assets/images/gallery/showcase/663252676_924480496992028_2489551339723532222_n.jpg',
+  'assets/images/gallery/showcase/ee32aa8e-085b-4a11-beb5-6447334f0e07.jpeg'
+];
+
+function shuffleArray(items) {
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+if (introMarqueeTrack && introMarqueeGroup) {
+  const randomizedImages = shuffleArray(showcaseImages);
+  introMarqueeGroup.innerHTML = randomizedImages
+    .map((src, index) => (
+      `<article class="image-hover intro-marquee__item">` +
+      `<img src="${src}" alt="Showcase ${index + 1}" loading="lazy" decoding="async">` +
+      `</article>`
+    ))
+    .join('');
+
   const clone = introMarqueeGroup.cloneNode(true);
   clone.setAttribute('aria-hidden', 'true');
   introMarqueeTrack.appendChild(clone);
