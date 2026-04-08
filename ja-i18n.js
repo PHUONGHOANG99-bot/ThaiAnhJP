@@ -54,6 +54,7 @@
     set('.site-footer__contact h3', 'お問い合わせ');
     set('.site-footer__social h3', 'SNS');
     set('.site-footer__legal h3', '法務情報');
+    setAll('.site-footer__legal p', ['THAI ANH 株式会社（THAI ANH Co., Ltd.）', 'All rights reserved.']);
 
     setAll('.site-footer__contact li span', ['Hotline', 'Email', '対応エリア']);
     setAll('.site-footer__bottom p', ['本物の品質、確かな価値、透明なサービス。', 'カスタマーサポート: 09:00 - 21:00（毎日）']);
@@ -63,10 +64,6 @@
     document.title = 'THAI ANH JP | 日越スタイルの上質メンズファッション';
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute('content', 'THAI ANH JP - 日本スタイルの上質なファッションを提案する企業サイト。');
-
-    set('#intro .home-intro__panel h2', '事業紹介');
-    set('#intro .home-intro__panel p', 'THAI ANH JPは高品質なファッション商品の輸入・販売に特化しています。信頼できる仕入れ、丁寧な検品、効率的な運営を軸に、適正価格で安心して選べる買い物体験を提供します。');
-    set('#intro .home-intro__cta', '事業紹介ページを見る');
 
     const marquee = document.querySelector('.intro-marquee');
     if (marquee) marquee.setAttribute('aria-label', '店舗イメージギャラリー');
@@ -84,11 +81,11 @@
     document.title = '会社概要 | THAI ANH JP';
     set('main nav[aria-label="Breadcrumb"] a', 'ホーム');
     set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '会社概要');
-    setAll('.profile-tab strong', ['会社概要', '沿革', '店舗拠点', '企業情報']);
+    setAll('.profile-tab strong', ['会社概要', '沿革', '店舗拠点']);
     set('#company-overview .profile-panel__head h2', '企業プロフィール');
-    setAll('.profile-table th', ['会社名', '設立日', '代表者', '本社所在地', '海外拠点', '資本金', '従業員数', '主要取引先', '企業方針']);
+    setAll('.profile-table th', ['会社名', '設立', '代表者', '事業内容', '本社所在地', '店舗一覧', '従業員数', '主要取引先']);
     set('.profile-table__link a', '会社資料をダウンロード');
-    setAll('.profile-site-card h3', ['拠点1 - GIFU', '拠点2 - SAKAE']);
+    setAll('.profile-site-card h3', ['岐阜店', '名古屋店']);
   };
 
   const setBusiness = () => {
@@ -96,16 +93,12 @@
     set('.business-hero__label span', '企業概要');
     set('main nav[aria-label="Breadcrumb"] a', 'ホーム');
     set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '企業情報');
-    set('.business-block h1', '企業内容');
-    setAll('.business-row h2', ['店舗ネットワーク型の販売モデル', '店頭サービス基準', '小売向けマルチチャネル運営']);
   };
 
   const setActivities = () => {
     document.title = '事業紹介 | THAI ANH JP';
     set('.activities-breadcrumb a', 'ホーム');
     set('.activities-breadcrumb span:last-child', '事業紹介');
-    set('.activities-hero__top h1', '事業紹介');
-    set('.activities-hero__top p', 'THAI ANH JPは、高品質なファッション商品の仕入れ・検品・販売に特化しています。信頼性と実用性を重視し、適正価格で安定した価値を届けます。');
     setAll('.activities-intro__stats strong', ['100%', '2拠点', '価格透明']);
     setAll('.activities-intro__stats span', ['販売前に全品チェック', '直営で運営', 'オンライン/店舗で統一']);
     setAll('.activities-tab', ['仕入れ選定について', '品質検品について', '価格と販売チャネルについて']);
