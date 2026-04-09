@@ -25,7 +25,7 @@
     setMenuByHref('company.html', '会社概要');
     setMenuByHref('business.html', '企業情報');
     setMenuByHref('activities.html', '事業紹介');
-    setMenuByHref('recruit.html', '採用情報');
+    setMenuByHref('recruit.html', '働く環境');
     setMenuByHref('#access', 'お問い合わせ');
     setMenuByHref('index.html#access', 'お問い合わせ');
     setMenuByHref('#news', 'お知らせ');
@@ -110,10 +110,12 @@
   };
 
   const setRecruit = () => {
-    document.title = '採用情報 | THAI ANH JP';
+    document.title = '働く環境 | THAI ANH JP';
     set('main nav[aria-label="Breadcrumb"] a', 'ホーム');
-    set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '採用情報');
-    setAll('.recruit-tab strong', ['募集職種', 'スタッフ情報', '成長ステップ', '福利厚生・カルチャー']);
+    set('main nav[aria-label="Breadcrumb"] span.text-slate-700', '働く環境');
+    setAll('.recruit-tab strong', ['店舗の雰囲気', '接客の流れ', '売場づくりと連携', '日々の業務']);
+    setAll('.recruit-panel header p', ['店舗の雰囲気', '接客の流れ', '売場づくりと連携', '日々の業務']);
+    setAll('.recruit-panel header h2', ['店舗での働きやすさ', '接客の流れ', '売場づくりと連携', '日々の業務']);
   };
 
   const setHistory = () => {
