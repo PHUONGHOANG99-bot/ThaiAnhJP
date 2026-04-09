@@ -393,3 +393,37 @@ if (introMarqueeTrack && introMarqueeGroup) {
   clone.setAttribute('aria-hidden', 'true');
   introMarqueeTrack.appendChild(clone);
 }
+
+// ====================================
+// Contact form chuyen sang email
+// ====================================
+const contactForm = document.querySelector('[data-contact-form]');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const reason = String(formData.get('contactReason') || '').trim();
+    const name = String(formData.get('contactName') || '').trim();
+    const email = String(formData.get('contactEmail') || '').trim();
+    const phone = String(formData.get('contactPhone') || '').trim();
+    const message = String(formData.get('contactMessage') || '').trim();
+
+    const subject = `[THAI ANH JP] ${reason || 'お問い合わせ'}`;
+    const bodyLines = [
+      'お問い合わせ内容を受け付けました。',
+      '',
+      `お問い合わせ種別: ${reason || '-'}`,
+      `お名前: ${name || '-'}`,
+      `メールアドレス: ${email || '-'}`,
+      `電話番号: ${phone || '-'}`,
+      '',
+      'お問い合わせ内容:',
+      message || '-'
+    ];
+
+    const mailtoUrl = `mailto:thaianhjp2023@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+    window.location.href = mailtoUrl;
+  });
+}

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>働く環境 | THAI ANH JP</title>
+    <title>お問い合わせ | THAI ANH JP</title>
     <meta
       name="description"
-      content="THAI ANH JPの店舗における働く環境、接客の流れ、売場づくり、日々の業務をご紹介します。"
+      content="THAI ANH JPへのお問い合わせフォーム。製品、価格、サイズ相談、店舗案内などはこちらからご連絡ください。"
     />
 
     <link rel="icon" type="image/jpeg" href="assets/logo/logotheanh.jpg" />
@@ -37,7 +37,7 @@
     <script src="script.js" defer></script>
     <script src="ja-i18n.js" defer></script>
   </head>
-  <body class="recruit-page text-slate-800 antialiased">
+  <body class="contact-page text-slate-800 antialiased">
     <header id="siteHeader" class="site-header fixed inset-x-0 top-0 z-50">
       <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="index.html#home" class="group flex min-w-0 items-center gap-3">
@@ -55,8 +55,8 @@
           <a class="nav-link" href="company.html">会社概要</a>
           <a class="nav-link" href="business.html">企業情報</a>
           <a class="nav-link" href="activities.html">事業紹介</a>
-          <a class="nav-link is-active" href="recruit.html">働く環境</a>
-          <a class="nav-link" href="contact.html">お問い合わせ</a>
+          <a class="nav-link" href="recruit.html">採用情報</a>
+          <a class="nav-link is-active" href="contact.html">お問い合わせ</a>
         </nav>
 
         <button
@@ -85,153 +85,95 @@
         <a class="mobile-link block rounded-md px-3 py-4" href="company.html">会社概要</a>
         <a class="mobile-link block rounded-md px-3 py-4" href="business.html">企業情報</a>
         <a class="mobile-link block rounded-md px-3 py-4" href="activities.html">事業紹介</a>
-        <a class="mobile-link mobile-link-active block rounded-md px-3 py-4" href="recruit.html">働く環境</a>
-        <a class="mobile-link block rounded-md px-3 py-4" href="contact.html">お問い合わせ</a>
+        <a class="mobile-link block rounded-md px-3 py-4" href="recruit.html">採用情報</a>
+        <a class="mobile-link mobile-link-active block rounded-md px-3 py-4" href="contact.html">お問い合わせ</a>
       </div>
     </nav>
 
     <main>
-      <section class="section-space pt-28 sm:pt-32">
+      <section class="contact-page__hero">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <nav class="reveal mb-9 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500" aria-label="Breadcrumb">
+          <nav class="reveal mb-6 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500" aria-label="Breadcrumb">
             <a href="index.html#home" class="hover:text-slate-800">ホーム</a>
             <span class="mx-2">&gt;</span>
-            <span class="text-slate-700">働く環境</span>
+            <span class="text-slate-700">お問い合わせ</span>
           </nav>
+          <p class="text-xs uppercase tracking-[0.28em] text-slate-500">Contact</p>
+          <h1>お問い合わせ</h1>
+          <p>
+            製品、価格、サイズ相談、店舗のご案内など、気になる点があればお気軽にご連絡ください。
+            送信するとメールアプリが開き、そのまま問い合わせ内容を送ることができます。
+          </p>
+        </div>
+      </section>
 
-          <div class="recruit-tabs reveal" role="tablist" aria-label="働く環境">
-            <button class="recruit-tab is-active" type="button" role="tab" aria-selected="true" data-tab-target="store-environment">
-              <span>01</span>
-              <strong>店舗の雰囲気</strong>
-            </button>
-            <button class="recruit-tab" type="button" role="tab" aria-selected="false" data-tab-target="customer-service">
-              <span>02</span>
-              <strong>接客の流れ</strong>
-            </button>
-            <button class="recruit-tab" type="button" role="tab" aria-selected="false" data-tab-target="team-work">
-              <span>03</span>
-              <strong>売場づくりと連携</strong>
-            </button>
-            <button class="recruit-tab" type="button" role="tab" aria-selected="false" data-tab-target="daily-work">
-              <span>04</span>
-              <strong>日々の業務</strong>
-            </button>
+      <section class="section-space pt-0">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="contact-page__layout reveal">
+            <aside class="contact-page__info">
+              <h2>THAI ANH JP へのご連絡</h2>
+              <p>
+                お問い合わせ内容をできるだけ分かりやすくまとめていただけると、
+                よりスムーズにご案内できます。
+              </p>
+
+              <div class="contact-page__info-list">
+                <div class="contact-page__info-item">
+                  <span>Hotline</span>
+                  <strong>080-4217-9991</strong>
+                </div>
+                <div class="contact-page__info-item">
+                  <span>Email</span>
+                  <strong>thaianhjp2023@gmail.com</strong>
+                </div>
+                <div class="contact-page__info-item">
+                  <span>営業時間</span>
+                  <strong>09:00 - 21:00</strong>
+                </div>
+              </div>
+            </aside>
+
+            <form class="contact-form" data-contact-form>
+              <div class="contact-form__grid">
+                <label class="contact-form__field" for="contactReason">
+                  <span>お問い合わせ種別 <em>*</em></span>
+                  <select id="contactReason" name="contactReason" required autocomplete="off">
+                    <option value="">選択してください</option>
+                    <option value="製品について">製品について</option>
+                    <option value="価格について">価格について</option>
+                    <option value="サイズ相談">サイズ相談</option>
+                    <option value="店舗案内">店舗案内</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </label>
+
+                <label class="contact-form__field" for="contactName">
+                  <span>お名前 <em>*</em></span>
+                  <input id="contactName" name="contactName" type="text" placeholder="山田 太郎" autocomplete="name" required />
+                </label>
+
+                <label class="contact-form__field" for="contactEmail">
+                  <span>メールアドレス <em>*</em></span>
+                  <input id="contactEmail" name="contactEmail" type="email" placeholder="example@email.com" autocomplete="email" required />
+                </label>
+
+                <label class="contact-form__field" for="contactPhone">
+                  <span>電話番号（任意）</span>
+                  <input id="contactPhone" name="contactPhone" type="tel" placeholder="080-1234-5678" autocomplete="tel" />
+                </label>
+
+                <label class="contact-form__field contact-form__field--full" for="contactMessage">
+                  <span>お問い合わせ内容 <em>*</em></span>
+                  <textarea id="contactMessage" name="contactMessage" rows="7" placeholder="ご相談内容をご記入ください。" required></textarea>
+                </label>
+              </div>
+
+              <div class="contact-form__actions">
+                <button type="submit" class="contact-form__submit">メールで送る</button>
+                <p class="contact-form__note">※ 送信するとメールアプリが開きます。</p>
+              </div>
+            </form>
           </div>
-
-          <section class="recruit-panel reveal is-active" data-tab-panel="store-environment">
-            <header>
-              <p>Store Environment</p>
-              <h2>店舗での働きやすさ</h2>
-            </header>
-            <p>
-              THAI ANH JPの店舗では、接客、商品管理、売場づくりがひとつにつながっています。
-              お客様が気持ちよく過ごせる空間を整えながら、スタッフ同士が声をかけ合い、落ち着いて働ける環境を大切にしています。
-            </p>
-
-            <div class="recruit-card-grid">
-              <article class="recruit-job-card tone-mint">
-                <h3>売場の見やすさ</h3>
-                <div class="recruit-job-card__media">
-                  <img src="assets/images/inshop/lv2.jpeg" alt="店舗の売場イメージ" loading="lazy" decoding="async">
-                </div>
-                <p>商品が見つけやすく、手に取りやすい売場づくりを心がけ、入店から会計まで自然な流れを作っています。</p>
-              </article>
-
-              <article class="recruit-job-card tone-cream">
-                <h3>スタッフが安心して働ける環境</h3>
-                <div class="recruit-job-card__media">
-                  <img src="assets/images/inshop/nv2.jpeg" alt="店舗の空間イメージ" loading="lazy" decoding="async">
-                </div>
-                <p>明るく落ち着いた売場で、声をかけ合いながら無理なく働けるよう、チームで支え合う環境づくりを大切にしています。</p>
-              </article>
-
-              <article class="recruit-job-card tone-lemon">
-                <h3>お客様との距離感</h3>
-                <div class="recruit-job-card__media">
-                  <img src="assets/images/inshop/nv1.jpeg" alt="接客のイメージ" loading="lazy" decoding="async">
-                </div>
-                <p>過度にかしこまらず、でも丁寧に。お客様に合わせた自然な接客を大切にしています。</p>
-              </article>
-
-              <article class="recruit-job-card tone-lime">
-                <h3>相談しやすい雰囲気</h3>
-                <div class="recruit-job-card__media">
-                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="スタッフ連携のイメージ" loading="lazy" decoding="async">
-                </div>
-                <p>わからないことがあればすぐに相談でき、スタッフ同士で助け合いながら仕事を進めています。</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="recruit-panel reveal" data-tab-panel="customer-service" hidden>
-            <header>
-              <p>Customer Service</p>
-              <h2>接客の流れ</h2>
-            </header>
-            <div class="recruit-content-grid">
-              <article>
-                <h3>丁寧で自然な接客</h3>
-                <p>お客様のペースに合わせて、商品説明やサイズ案内をわかりやすく行えるようにしています。</p>
-              </article>
-              <article>
-                <h3>声をかけやすい距離感</h3>
-                <p>お客様に近すぎず遠すぎない距離感を意識し、安心して試着や相談ができる空気をつくります。</p>
-              </article>
-              <article>
-                <h3>商品理解を活かした案内</h3>
-                <p>素材感、着回し、季節感などを踏まえて、売るためではなく“合う一着”を提案する姿勢を大切にしています。</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="recruit-panel reveal" data-tab-panel="team-work" hidden>
-            <header>
-              <p>Team Work</p>
-              <h2>売場づくりと連携</h2>
-            </header>
-            <div class="recruit-steps">
-              <article>
-                <span>01</span>
-                <h3>朝の共有</h3>
-                <p>開店前に売場の状態や本日の重点を確認し、スタッフ全員で同じ方向を向いてスタートします。</p>
-              </article>
-              <article>
-                <span>02</span>
-                <h3>役割分担が明確</h3>
-                <p>接客、商品整理、レジ対応、補充などを状況に応じて分担し、無理なく動けるようにしています。</p>
-              </article>
-              <article>
-                <span>03</span>
-                <h3>すぐに相談できる</h3>
-                <p>接客中に迷ったことや確認したいことがあれば、すぐに声をかけられる体制を大切にしています。</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="recruit-panel reveal" data-tab-panel="daily-work" hidden>
-            <header>
-              <p>Daily Work</p>
-              <h2>日々の業務</h2>
-            </header>
-            <div class="recruit-content-grid">
-              <article>
-                <h3>商品整理と補充</h3>
-                <p>売場が整っていると接客もスムーズになるため、日々の整理整頓や補充を大切にしています。</p>
-              </article>
-              <article>
-                <h3>試着対応とサイズ案内</h3>
-                <p>サイズ感や着用イメージをしっかり伝え、気持ちよく選んでいただけるようにしています。</p>
-              </article>
-              <article>
-                <h3>レジと最後のひと声</h3>
-                <p>お会計後も印象よくお見送りできるよう、最後まで丁寧な対応を心がけています。</p>
-              </article>
-              <article>
-                <h3>店内の雰囲気づくり</h3>
-                <p>明るい挨拶と清潔な売場を保つことで、スタッフもお客様も心地よく過ごせる空間を目指しています。</p>
-              </article>
-            </div>
-          </section>
         </div>
       </section>
     </main>
